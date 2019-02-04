@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Forma</title>
+</head>
+<body>
+<h1>Forma</h1>
+<form action="#" th:action="@{/demo}" th:object="${Admin}" method="post">
+    <p>Id: <input type="text" th:field="*{id}" /></p>
+    <p>Name: <input type="text" th:field="*{name}" /></p>
+    <p>Secondname: <input type="text" th:field="*{secondname}" /></p>
+    <p>Adres: <input type="text" th:field="*{adres}" /></p>
+    <p>Email: <input type="text" th:field="*{email}" /></p>
+    <p>Phone: <input type="text" th:field="*{phone}" /></p>
+    <p>Profesion: <input type="text" th:field="*{profesion}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>
